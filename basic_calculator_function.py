@@ -3,16 +3,16 @@ def basic_calculator(a,b,operation):
   if (a.isnumeric() & b.isnumeric()):
     a=float(a)
     b=float(b)
-    if operation == "add":
+    if operation == "+":
       result = a + b
-    elif operation == "subtract":
+    elif operation == "-":
       result = a - b
-    elif operation == "divide":
+    elif operation == "/":
       result = a / b
-    elif operation == "multiply":
+    elif operation == "*":
       result = a * b
     else:
-      result = "Operations supported: add, subtract, divide, multiple only"
+      result = "Operations supported: add +, sub -, div /, mult * only"
     
   else:
     result = "Please enter a valid number for a & b"
